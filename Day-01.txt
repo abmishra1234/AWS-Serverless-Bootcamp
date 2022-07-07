@@ -1,0 +1,101 @@
+AWS Lambda & Serverless Architecture Bootcamp (Build 5 Apps)
+
+Day-01:
+What is Node.js?
+Runtime environment for javaScript on the server.
+
+What is Serverless?
+No need to provision physical server for your computing need.
+You don't need som many bits and pieces required to your business application.
+
+Serverless Architecture.
+How Serverless work?
+You just write your segregated implementation of API for business use-cases.
+
+These functions are stateless and often run in docker like containers.
+
+Serverless means event driven computing using small independent stateless function 
+running inside container in the cloud.
+
+Let's write the Hello World program, using Server Less AWS Lambda and API Gateway services from AWS.
+
+So the first thing you should learn is Amazon API Gateway.
+Let's do some practice with this AWS service.
+
+Amazon API Gateway
+create, maintain, and secure APIs at any scale
+
+API Gateway
+- have following sub parts in service
+-- API'Server
+-- Custom domain names
+-- VPC Links
+
+You can have selection of different type of Amazon API
+- HTTP API
+- Web Socket API
+- REST API
+- REST API Private
+
+HTTP API
+Build low-latency and cost-effective REST APIs with built-in features such as OIDC and OAuth2, 
+and native CORS support.
+
+Works with the following:
+Lambda, HTTP backends
+
+//////////////////////////////////
+OIDC stands for Open ID Connect, and it is an open authentication protocol that profiles
+and extends OAuth 2.0 to add an identity layer.
+
+OIDC allows clients to confirm an end user's identity using authentication by an authorization server.
+/////////////////////////////////
+
+WebSocket API
+Build a WebSocket API using persistent connections for real-time use cases 
+such as chat applications or dashboards.
+
+Works with the following:
+Lambda, HTTP, AWS Services
+
+REST API
+Develop a rest API where you gain complete control over the request and response along 
+with API management capabilities.
+
+Works with the following:
+Lambda, HTTP, AWS Services
+
+REST API Private
+Create a REST API that is only accessible from within a VPC.
+Works with the following:
+Lambda, HTTP, AWS Services
+
+###################################
+Important Links 
+
+https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
+https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+https://docs.aws.amazon.com/cli/latest/reference/lambda/
+
+
+Just check the your identity first every time you starting up.
+
+[cloudshell-user@ip-10-0-99-167 ~]$ aws sts get-caller-identity
+{
+    "UserId": "AIDA4CF75JJK7QKDHYC3S",
+    "Account": "829331163733",
+    "Arn": "arn:aws:iam::829331163733:user/serverless-admin"
+}
+[cloudshell-user@ip-10-0-99-167 ~]$ 
+
+##################-----------Day-01 Completed------------------
+
+
+
+
+
+
+
+
+
